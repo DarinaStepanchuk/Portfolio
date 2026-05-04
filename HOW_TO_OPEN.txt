@@ -1,0 +1,48 @@
+========================================
+  HOW TO OPEN THE PORTFOLIO WEBSITE
+========================================
+
+This is a static website (HTML + CSS + JS).
+No server or internet connection is required to view it.
+
+METHOD 1 — simplest:
+----------------------
+1. Open the Portfolio folder
+2. Find the file  index.html
+3. Double-click on it
+4. The website will open in your browser
+
+METHOD 2 — open via browser manually:
+---------------------------------------
+1. Open any browser
+   (Google Chrome, Firefox, or Edge)
+2. Press Ctrl+O  (or go to File → Open File)
+3. Select index.html from the Portfolio folder
+4. Click "Open"
+
+========================================
+  FILE STRUCTURE
+========================================
+
+Portfolio/
+├── index.html          ← main page (open this)
+├── style.css           ← styles
+├── script.js           ← JavaScript
+├── HOW_TO_OPEN.txt     ← this file
+└── images/             ← photos and images
+
+========================================
+  NOTES
+========================================
+
+• An internet connection is only needed for:
+  - Google Fonts (text fonts)
+  - Boxicons (icons)
+
+• If fonts or icons do not load —
+  please check your internet connection
+
+• All sections are on one page:
+  Home → About → Education → Skills → Projects → Contact
+
+========================================
