@@ -1,3 +1,18 @@
+// Read More / Show Less toggle
+let readMoreBtn = document.querySelector('#read-more-btn');
+let aboutExtra = document.querySelector('#about-extra');
+
+readMoreBtn.onclick = (e) => {
+    e.preventDefault();
+    if (aboutExtra.classList.contains('open')) {
+        aboutExtra.classList.remove('open');
+        readMoreBtn.textContent = 'Read More';
+    } else {
+        aboutExtra.classList.add('open');
+        readMoreBtn.textContent = 'Show Less';
+    }
+};
+
 // Toggle icon navbar
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -17,15 +32,14 @@ window.onscroll = () => {
     let top = window.scrollY; // Текущая прокрутка страницы
 
     sections.forEach(sec => {
-        let top = wingow.scrollY;
-        let offset = sec.offsetTop - 100; // Верхняя граница секции (с учетом смещения)
-        let height = sec.offsetHeight; // Высота секции
-        let id = sec.getAttribute('id'); // Получаем ID секции
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 100;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
 
         if (top >= offset && top < offset + height) {
-            // Активируем ссылку в навигации
             navLinks.forEach(links => {
-                link.classList.remove("active");
+                links.classList.remove("active");
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
        
